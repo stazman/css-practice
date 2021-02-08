@@ -33,9 +33,39 @@
       font-size: 6rem;
     }
 
+    .no-bullet {
+      list-style: none;
+    }
+
+    a, .inline-li {
+      display: inline;
+      padding: 3rem;
+      text-decoration: none;
+    }
+
+    .left-aligned {
+      text-align: left;
+    }
+
   </style>
 </head>
 <body>
+  <nav id="top">
+    <ul>
+      <li class="no-bullet inline-li">
+        <a href="#top">Home</a>
+      </li>
+      <li class="no-bullet inline-li">
+        <a href="#icon-div">Icons</a>
+      </li>
+      <li class="no-bullet inline-li">
+        <a href="#mini-layout">Some more stuff</a>
+      </li>
+      <li class="no-bullet inline-li">
+        <a href="#long-text">Yet more</a>
+      </li>
+    </ul>
+  </nav>
   <div id="banner-div">
     <img src="http://placekitten.com/1140/250" alt="Cute kitten">
   </div>
@@ -110,6 +140,26 @@
         <a href="http://www.example.com/">Link</a>
       </div>
     </span>
+  </div>
+  <br><br>
+  <hr>
+  <br><br>
+  <div id="long-text">
+    <p class="left-aligned">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum diam a elit luctus, et porttitor diam condimentum. Ut cursus vestibulum massa, nec sollicitudin justo vulputate vestibulum. Suspendisse rutrum diam nec est volutpat, at condimentum metus faucibus. Pellentesque molestie quam ac dui elementum tincidunt. Praesent scelerisque commodo ante, et dapibus ipsum vestibulum nec. Fusce ac diam purus. Nulla facilisi. Duis ex sem, sollicitudin ut ligula vel, sagittis eleifend est. Sed sit amet dolor et leo rutrum egestas id sed purus.
+    </p>
+    <p class="left-aligned">
+      Fusce convallis turpis hendrerit nisl convallis, nec cursus velit laoreet. Proin arcu velit, finibus mattis est id, placerat mattis nibh. Suspendisse et urna id lorem dictum consequat quis in justo. Proin finibus, diam vulputate rhoncus blandit, augue lorem cursus leo, eget dapibus nunc eros nec metus. Quisque et consequat sapien. Aenean orci nunc, blandit ac lectus a, facilisis dignissim quam. Sed nec porta mi. Duis mattis scelerisque scelerisque. Vestibulum laoreet sapien at dui finibus, eu mollis orci consectetur. Pellentesque eros eros, scelerisque vitae interdum ut, lobortis et augue. Maecenas lobortis neque at convallis pellentesque.
+    </p>
+    <p class="left-aligned">
+      Nunc id tempor est. Maecenas in eros non velit pellentesque gravida. Ut ac nulla vel ex ultricies tincidunt sed eu enim. Sed id convallis odio, eget interdum arcu. Quisque eu nunc libero. Mauris faucibus pharetra quam, sed tristique arcu suscipit eget. Sed tincidunt justo at risus suscipit tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent hendrerit metus sit amet risus aliquam cursus. Maecenas eget augue pulvinar, finibus enim ut, elementum massa. Vivamus nunc metus, lobortis non fermentum sed, sagittis sit amet elit. Phasellus tempor tellus felis, eu auctor eros sodales sed. Suspendisse quis dolor nec nunc tincidunt facilisis. Proin vitae luctus diam. Praesent convallis purus in risus malesuada, ac cursus elit ultricies. Curabitur ac libero mollis, posuere velit sed, aliquam erat.
+    </p>
+    <p class="left-aligned">
+      Donec vel justo ut tortor condimentum venenatis. Aliquam tempor sapien quis ipsum sollicitudin, eget lobortis neque egestas. Curabitur interdum neque non massa pretium tincidunt. Fusce sit amet interdum diam. Cras diam lorem, interdum vitae ex vitae, fermentum pellentesque sapien. Suspendisse et pretium magna. Duis et ultricies nulla.
+    </p>
+    <p class="left-aligned">
+      Nullam quis rutrum est. Maecenas tincidunt vel lorem at cursus. Cras vulputate laoreet erat, consequat vestibulum nulla. Integer tristique, enim quis euismod consequat, metus justo pulvinar odio, nec ornare ipsum diam vitae leo. Phasellus nec elementum nulla. Etiam dolor lectus, dignissim a accumsan eget, condimentum vel eros. Morbi venenatis libero quis nibh elementum imperdiet. Fusce dapibus, sem a consequat malesuada, nunc ex pretium nulla, a fermentum neque libero quis lectus. Pellentesque maximus pulvinar elit, vitae porttitor mi consectetur ac. In quis ornare ligula. Mauris elementum, ante ut feugiat placerat, libero ligula tempor dolor, vitae ullamcorper est tortor non metus. Nam porta ligula est, id gravida massa pellentesque quis. Mauris vehicula ipsum massa, eu dictum nisi euismod id.
+    </p>
   </div>
 </body>
 </html>
