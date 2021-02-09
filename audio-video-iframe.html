@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>audio-video-iframe</title>
+</head>
+
+<body>
+
+  <p>Some common browsers don't let you play a sound or video automatically when a webpage loads.</p> <p>Even though it's coded correctly for it, you might not hear the two short audio pieces playing at the same time.</p>
+  <br>
+
+  <audio autoplay loop>
+    <source
+      src="https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand3.wav"
+      type="audio/wav" />
+    <p>You may not be hearing audio because your browser doesn't support HTML audio tags.</p>
+  </audio>
+
+  <audio autoplay loop>
+    <source
+      src="./assets/audio/file_example_MP3_700KB.mp3"
+      type="audio/mp3"
+    >
+    <p>You may not be hearing audio because your browser doesn't support HTML audio tags.</p>
+  </audio>
+  <br>
+
+  <p>Play the Imperial March from Star Wars below, through the native controls attribute for the audio element</p>
+
+  <audio controls>
+    <source
+      src="https://www2.cs.uic.edu/~i101/SoundFiles/ImperialMarch60.wav"
+      type="audio/wav"
+    >
+    <p>You may not be hearing audio because your browser doesn't support HTML audio tags.</p>
+  </audio>
+
+  <audio id="march"
+    src="https://www2.cs.uic.edu/~i101/SoundFiles/ImperialMarch60.wav"
+  >
+    <source type="audio/wav">
+    <p>You may not be hearing audio because your browser doesn't support HTML audio tags.</p>
+  </audio>
+  <br><br>
+
+  <p>Play the Imperial March from Star Wars below, through JavaScript.</p>
+  <button
+    onclick="playMarch()"
+    type="button"
+  >
+    Click to play
+  </button>
+  <button
+    onclick="pauseMarch()"
+    type="button"
+  >
+    Click to pause
+  </button>
+
+  <script>
+
+    let march = document.querySelector("#march");
+
+    function playMarch(){
+      march.play();
+    }
+
+    function pauseMarch(){
+      march.pause();
+    }
+
+  </script>
+
+</body>
+</html>
