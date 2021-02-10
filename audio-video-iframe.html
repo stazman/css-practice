@@ -24,15 +24,15 @@
   <p>Some common browsers don't let you play a sound or video automatically when a webpage loads.</p>
 
   <!-- Uncomment the following lines in order to possibly have two sound files run automatically on page load -->
-  
-  <!-- <audio autoplay loop>
+
+  <!-- <audio autoplay loop title="Star Wars cantina">
     <source
       src="https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand3.wav"
       type="audio/wav" />
     <p>You may not be hearing audio because your browser doesn't support HTML audio tags.</p>
   </audio>
 
-  <audio autoplay loop>
+  <audio autoplay loop title="sample audio beats">
     <source
       src="./assets/audio/file_example_MP3_700KB.mp3"
       type="audio/mp3"
@@ -43,7 +43,9 @@
 
   <p>Play the Imperial March from Star Wars below, through the native controls attribute for the audio element</p>
 
-  <audio controls>
+  <audio controls
+    title="Imperial March from Star Wars"
+  >
     <source
       src="https://www2.cs.uic.edu/~i101/SoundFiles/ImperialMarch60.wav"
       type="audio/wav"
@@ -52,6 +54,7 @@
   </audio>
 
   <audio id="march"
+    title="Imperial March from Star Wars"
     src="https://www2.cs.uic.edu/~i101/SoundFiles/ImperialMarch60.wav"
   >
     <source type="audio/wav">
@@ -74,10 +77,10 @@
   </button>
   <br><br>
 
-  <p>Below is an example of iframe:</p>
+  <p>Below is an example of an iframe with an embedded funny cat video from YouTube:</p>
 
   <iframe
-    title="cats"
+    title="funny cats"
     width="560"
     height="315"
     src="https://www.youtube.com/embed/XyNlqQId-nk"
@@ -98,15 +101,18 @@
   <p>Below is a video with controls using a relative path:</p>
 
   <video controls
+    title="app demo video"
     width="560"
     height="315"
   >
     <source src="./assets/video/dwla.mp4">
-      <track
-    src="english-subtitles.vtt"
-    kind="subtitles"
-  >
-
+    <!-- NOTE: Below is only an example; no file actually exists -->
+    <track
+      src="english-subtitles.vtt"
+      kind="subtitles"
+      srclang="en"
+      label="app demo video"
+    >
     <p>You may not be seeing video because your browser doesn't support HTML audio tags.</p>
   </video>
 
