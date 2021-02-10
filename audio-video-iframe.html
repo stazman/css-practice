@@ -6,13 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>audio-video-iframe</title>
 </head>
-
 <body>
 
-  <p>Some common browsers don't let you play a sound or video automatically when a webpage loads.</p> <p>Even though it's coded correctly for it, you might not hear the two short audio pieces playing at the same time.</p>
+  <p>Embedded Google Calendar:</p>
   <br>
+  <iframe
+    title="Holiday Calendar"
+    src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%234285F4&amp;ctz=America%2FChicago&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23009688&amp;showTitle=1&amp;showNav=1&amp;showDate=1&amp;showPrint=1&amp;showTabs=1&amp;showCalendars=1&amp;showTz=1"
+    style="border:solid 2px blue"
+    width="600"
+    height="400"
+    frameborder="0"
+    scrolling="no">
+  </iframe>
+  <br><br>
+  <p>Even though it's coded correctly for it, you might not hear two short audio pieces playing at the same time right now.</p>
+  <p>Some common browsers don't let you play a sound or video automatically when a webpage loads.</p>
 
-  <audio autoplay loop>
+  <!-- Uncomment the following lines in order to possibly have two sound files run automatically on page load -->
+  
+  <!-- <audio autoplay loop>
     <source
       src="https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand3.wav"
       type="audio/wav" />
@@ -26,7 +39,7 @@
     >
     <p>You may not be hearing audio because your browser doesn't support HTML audio tags.</p>
   </audio>
-  <br>
+  <br> -->
 
   <p>Play the Imperial March from Star Wars below, through the native controls attribute for the audio element</p>
 
@@ -69,7 +82,16 @@
     height="315"
     src="https://www.youtube.com/embed/XyNlqQId-nk"
     borderframe="3"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  >
+
+  <!-- NOTE: Below is only an example; no file actually exists -->
+  <track
+    src="english-subtitles.vtt"
+    kind="subtitles"
+    srclang="en"
+    label="app demo video"
+  >
   </iframe>
   <br><br>
 
@@ -80,6 +102,11 @@
     height="315"
   >
     <source src="./assets/video/dwla.mp4">
+      <track
+    src="english-subtitles.vtt"
+    kind="subtitles"
+  >
+
     <p>You may not be seeing video because your browser doesn't support HTML audio tags.</p>
   </video>
 
