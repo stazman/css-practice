@@ -47,6 +47,26 @@
       text-align: left;
     }
 
+    #content-box-sizing {
+      display: inline-block;
+      padding: 2vh;
+      margin: 2vh;
+      width: 40%;
+      box-sizing: content-box;
+      border: 2px solid blue;
+      height: 8vh;
+    }
+
+    #border-box-sizing {
+      display: inline-block;
+      padding: 2vh;
+      margin: 2vh;
+      box-sizing: border-box;
+      border: 2px solid blue;
+      width: 40%;
+      height: 8vh;
+    }
+
   </style>
 </head>
 <body>
@@ -140,6 +160,10 @@
         <a href="http://www.example.com/">Link</a>
       </div>
     </span>
+  </div>
+  <div>
+    <div id="content-box-sizing">This is with content-box sizing, so the height attribute is relevant.</div>
+    <div id="border-box-sizing">This is with border-box sizing, so the height attribute is irrelevant.</div>
   </div>
   <br><br>
   <hr>
