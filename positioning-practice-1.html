@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>positioning-practice</title>
+  <style>
+    div {
+      /* static is default */
+      border: .5em solid blue;
+      width: 20vh;
+      height: 20vh;
+      box-sizing: content-box;
+      font-size: .7em;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 60vh; height: 60vh;">
+    This is a container with static positioning.
+    <div style="position: static; border-color: blueviolet;">
+      This is a container with static positioning within a container with static positioning.
+    </div>
+    <div style="position: relative; top: 5%; border-color: yellow;">
+      This is a container with relative positioning within a container with static positioning under a sibling that's static. The 5% top space appears to be positioned relative to it and not to the parent of both.
+    </div>
+  </div>
+  <div style="width: 60vh; height: 60vh; position: relative; top: 10vh; ">
+    This is a container with relative positioning.
+  </div>
+  <div style="position: relative; left: 4vh;">
+    This is a container with relative positioning. It's original position was static to the left of the and top of the viewport. This is set 4 viewport units offset from the left of that original spot.
+  </div>
+  <div style="position: relative; right: 4vh;">
+    This is a container with relative positioning. It's original position was static to the left of the and top of the viewport. This is set 4 viewport units offset from the right of that original spot.
+  </div>
+  <div style="position: relative; top: 4vh;">
+    This is a container with relative positioning. It's original position was static to the left of the and top of the viewport. This is set 4 viewport units offset from the top of that original spot.
+  </div>
+  <div style="position: relative; bottom: 4vh;">
+    This is a container with relative positioning. It's original position was static to the left of the and top of the viewport. This is set 4 viewport units offset from the bottom of that original spot.
+  </div>
+  <hr>
+  <div style="position: static; left: 4vh;">
+    This has static positioning. It's left attribute has no effect.
+  </div>
+  <div style="position: static; right: 4vh;">
+    This has static positioning. It's right attribute has no effect.
+  </div>
+  <div style="position: static; top: 4vh;">
+    This has static positioning. It's top attribute has no effect.
+  </div>
+  <div style="position: static; bottom: 4vh;">
+    This has static positioning. It's bottom attribute has no effect.
+  </div>
+  <hr>
+  <div style="width: 60vh; height: 60vh; position: static;">
+    This is a container with static positioning. Notice both containers inside are on top of each other because this container is not absolute as well, so the top attribute does nothing.
+    <div style="position: absolute; border-color: orange;">
+      This is a container with absolute positioning within a container with absolute positioning.
+    </div>
+    <div style="position: absolute; top: 10%; border-color: red; color: red;">
+      This is a container with absolute positioning. Although it is coded to be a child of another container, that container is static, so this container appears with red border and text at the top of the viewport.
+    </div>
+  </div>
+  <hr>
+  <div style="width: 60vh; height: 60vh; position: absolute;">
+    This is a container with absolute positioning, which means the child containers are positioned in relation to it.
+    <div style="position: absolute;">
+      This is a container with absolute positioning within a container with absolute positioning.
+    </div>
+    <div style="position: absolute; top: 5%; border-color: green;">
+      This is a container with absolute positioning within a container with absolute positioning. It is under a sibling that also has absolute positioning. The 5% top space appears to be positioned relative to it and not to the parent of both.
+    </div>
+  </div>
+</body>
+</html>
