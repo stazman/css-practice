@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>positioning-practice-2</title>
+  <style>
+    div {
+      /* static is default */
+      border: .5em solid blue;
+      width: 20vh;
+      height: 20vh;
+      box-sizing: content-box;
+      font-size: .7em;
+    }
+  </style>
+</head>
+<body>
+  <div style="position: fixed; top: 10vh; left: 10vh;">
+    This is a container with fixed positioning without an ancestor.
+  </div>
+  <div style="width: 60vh; height: 60vh;">
+  </div>
+  <div style="width: 60vh; height: 60vh;">
+  </div>
+  <div style="position: sticky; top: 10vh; left: 30vh; border-color: green;">
+    This is a container with sticky positioning.
+  </div>
+  <div style="width: 60vh; height: 60vh;">
+  </div>
+  <div style="width: 60vh; height: 60vh;">
+  </div>
+  <div style="width: 60vh; height: 60vh;">
+    <div style="position: fixed; top: 40vh; left: 10vh; border: .75em solid blue;">
+      This is a container with fixed position inside another container. It has the same effect as the first fixed container, which is not inside a container, because with fixed positioning, being the child of a parent or not makes no difference. All fixed elements are "permanently" affixed to the viewport and stay put despite scrolling as they are coded to be positioned.
+    </div>
+  </div>
+</body>
+</html>
