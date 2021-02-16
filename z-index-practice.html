@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index practice</title>
+  <style>
+    div {
+      box-sizing: content-box;
+      font-size: 1em;
+      color: white;
+    }
+    #small-blue {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      margin-left: -10vh;
+      background-color: blue;
+      width: 20vh;
+      height: 20vh;
+      border: .5em solid black;
+    }
+    #medium-green {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      margin-left: -12.5vh;
+      background-color: green;
+      width: 25vh;
+      height: 25vh;
+      border: .5em solid black;
+    }
+    #large-red {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      margin-left: -15vh;
+      background-color: red;
+      width: 30vh;
+      height: 30vh;
+      border: .5em solid black;
+    }
+    #button-row {
+      position: absolute;
+      left: 50%;
+      margin-left: -19vh;
+      top: 70%;
+      text-align: center;
+    }
+    button {
+      height: 2em;
+      width: 6em;
+      border: solid black;
+      color: white;
+    }
+    #button-blue {
+      background-color: blue;
+    }
+    #button-green {
+      background-color: green;
+    }
+    #button-red {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h3>By default, the large, red square is covering the green and blue squares. Click on the corresponding button to bring the chosen square to the forefront, through changing of the z-index value of the square/s.</h3>
+  <div id="small-blue">
+    I'm small.
+  </div>
+  <div id="medium-green">
+    I'm medium.
+  </div>
+  <div id="large-red">
+    I'm large.
+  </div>
+  <div id="button-row">
+    <button id="button-blue">blue</button>
+    <button id="button-green">green</button>
+    <button id="button-red">red</button>
+  </div>
+<script>
+  let blueChoose = document.getElementById("small-blue");
+  let greenChoose = document.getElementById("medium-green");
+  let redChoose = document.getElementById("large-red")
+  let blueButton = document.getElementById("button-blue");
+  let greenButton = document.getElementById("button-green");
+  let redButton = document.getElementById("button-red");
+
+  let showBlue = blueButton.addEventListener("click", () => {
+    blueChoose.style.zIndex = 3;
+    greenChoose.style.zIndex = 2;
+    redChoose.style.zIndex = 0;
+  })
+
+  let showGreen = greenButton.addEventListener("click", () => {
+    greenChoose.style.zIndex = 3;
+    redChoose.style.zIndex = 0;
+  })
+
+  let showRed = redButton.addEventListener("click", () => {
+    redChoose.style.zIndex = 3;
+  })
+</script>
+</body>
+</html>
