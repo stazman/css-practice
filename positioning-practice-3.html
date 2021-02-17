@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>positioning-practice-3</title>
+</head>
+<style>
+  div, span {
+    width: 60vh;
+    height: 60vh;
+    border: 2px solid;
+    font-size: .8em;
+  }
+</style>
+<body>
+  <div style="top: 20vh; position: relative; border-color: purple; color: purple;">
+    This is a box with relative positioning. It's parent is the body. It does not cover the red box that is positioned at the same height absolutely, and is a bit lower than the red box, because body has a margin (8px) by default.
+  </div>
+  <div style="top: 20vh; position: absolute; border-color: red; color: red;">
+    This is a box with absolute positioning.
+  </div>
+  <div
+    style="top: 20vh;
+      position: relative;
+      border-color: green;
+      color: green;"
+  >
+    This is a box with relative positioning. Like the purple box, it is positioned relative to the body, but it does not have its own space at the top because of the space the red box with absolute positioning is taking up, which is also 20vh from the top of the viewport. If the top attribute is changed to 30vh, you'll see the green box go 10vh below the red box.
+  </div>
+</body>
+</html>
