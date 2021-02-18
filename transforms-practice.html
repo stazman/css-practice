@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>transforms practice</title>
-</head>
 <style>
   #translate, #rotate {
     width: 10vh;
@@ -16,6 +15,10 @@
     font-size: .6em;
   }
 </style>
+
+
+</head>
+
 
 <body>
   <h2>2D Transforms</h2>
@@ -51,20 +54,21 @@
 
     let translated = document.getElementById("translate");
 
-    translated.addEventListener("click", translateIt);
-
     let translateIt = () => {
       translated.style.transform = "translate(5vh, 5vh)";
     }
 
+    translated.addEventListener("click", translateIt);
+
+
 
     let rotated = document.getElementById("rotate");
-
-    rotated.addEventListener("click", rotateIt);
 
     let rotateIt = () => {
       rotated.style.transform = "rotate(45deg)"
     }
+
+    rotated.addEventListener("click", rotateIt);
 
   </script>
 </body>
