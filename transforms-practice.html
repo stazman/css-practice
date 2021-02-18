@@ -7,13 +7,13 @@
   <title>transforms practice</title>
 </head>
 <style>
-  #translate {
+  #translate, #rotate {
     width: 10vh;
     height: 10vh;
     margin: 10vh;
     background-color: lightblue;
     border: .2em solid black;
-    font-size: .8em;
+    font-size: .6em;
   }
 </style>
 
@@ -21,7 +21,6 @@
   <h2>2D Transforms</h2>
 
 <!--
-  rotate()
   scaleX()
   scaleY()
   scale()
@@ -32,19 +31,40 @@
 -->
 
 <h3>translate()</h3>
+
   <div id="translate">
-    Click me to move this square down and right!
+    Click me to move this square down and right.
   </div>
+
+<h3>rotate()</h3>
+
+  <div id="rotate">
+    Click me to rotate this square clockwise.
+  </div>
+
+  <br><br>
+  <hr>
+
   <h2>3D Transforms</h2>
+
   <script>
 
     let translated = document.getElementById("translate");
 
+    translated.addEventListener("click", translateIt);
+
     let translateIt = () => {
-      translated.style.transform = "translate(5vh, 5vh)"
+      translated.style.transform = "translate(5vh, 5vh)";
     }
 
-    translated.addEventListener("click", translateIt);
+
+    let rotated = document.getElementById("rotate");
+
+    rotated.addEventListener("click", rotateIt);
+
+    let rotateIt = () => {
+      rotated.style.transform = "rotate(45deg)"
+    }
 
   </script>
 </body>
