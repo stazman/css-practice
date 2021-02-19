@@ -5,8 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>transitions practice</title>
+  <style>
+    div#transition {
+      width: 10vh;
+      height: 10vh;
+      margin: 10vh;
+      background-color: lightblue;
+      border: .2em solid black;
+      font-size: .6em;
+      transition-duration: 8s;
+      transition-delay: 2s;
+      /* transition-timing-function: linear; */
+      /* transition-timing-function: ease; */
+      /* transition-timing-function: ease-in; */
+      /* transition-timing-function: ease-out; */
+      /* transition-timing-function: ease-in-out; */
+      /* transition-timing-function: cubic-bezier(0,0,1,1);
+      transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+      transition-timing-function: cubic-bezier(0.42,0,1,1);
+      transition-timing-function: cubic-bezier(0,0,0.58,1);
+      transition-timing-function: cubic-bezier(0.42,0,0.58,1); */
+    }
+
+    div#transition:hover {
+      width: 30vh;
+    }
+    
+  </style>
 </head>
 <body>
+
+<!-- transition	A shorthand property for setting the four transition properties into a single property
+transition-delay	Specifies a delay (in seconds) for the transition effect
+transition-duration	Specifies how many seconds or milliseconds a transition effect takes to complete
+transition-property	Specifies the name of the CSS property the transition effect is for
+transition-timing-function	Specifies the speed curve of the transition effect -->
+
+<div id="transition">
+  Hover on this box to make the uncommented out transition.
+</div>
+
 
 </body>
 </html>
