@@ -5,8 +5,126 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>animations practice</title>
+  <style>
+
+    @keyframes animated-content {
+      from {content: "Before the change";} to {content: "After the change";}
+    }
+
+    p#animate::after {
+      content: "Before the change";
+      animation-name: animated-content;
+      animation-delay: 2s;
+      animation-duration: 4s;
+      /* animation-iteration-count: 3; */
+      animation-iteration-count: infinite;
+      /* animation-direction: normal; */
+      /* animation-direction: reverse; */
+      /* animation-direction: alternate; */
+      /* animation-direction: alternate-reverse; */
+      /* animation-timing-function: ease; */
+      /* animation-timing-function: linear;
+      animation-timing-function: ease-in;
+      animation-timing-function: ease-out;
+      animation-timing-function: ease-in-out;
+
+      animation-timing-function:cubic-bezier(0.6, 0.04, 0.98, 0.335); */
+    }
+
+    @keyframes disappearing-box {
+      from {opacity: 1;} to {opacity: 0;}
+    }
+
+    div#disappearing {
+      width: 20vh;
+      height: 20vh;
+      margin: 5vh;
+      background-color: blue;
+      animation-name: disappearing-box;
+      animation-delay: 2s;
+      animation-duration: 4s;
+      /* animation-iteration-count: 3; */
+      animation-iteration-count: infinite;
+      /* animation-direction: normal; */
+      /* animation-direction: reverse; */
+      /* animation-direction: alternate; */
+      /* animation-direction: alternate-reverse; */
+      /* animation-timing-function: ease; */
+      /* animation-timing-function: linear; */
+      /* animation-timing-function: ease-in; */
+      /* animation-timing-function: ease-out; */
+      /* animation-timing-function: ease-in-out; */
+
+      /* animation-timing-function:cubic-bezier(0.6, 0.04, 0.98, 0.335); */
+
+    }
+
+    div#appearing {
+      width: 20vh;
+      height: 20vh;
+      margin: 5vh;
+      background-color: blue;
+      animation-name: disappearing-box;
+      animation-delay: 2s;
+      animation-duration: 4s;
+      /* animation-iteration-count: 3; */
+      animation-iteration-count: infinite;
+      /* animation-direction: normal; */
+      animation-direction: reverse;
+      /* animation-direction: alternate; */
+      /* animation-direction: alternate-reverse; */
+      /* animation-timing-function: ease; */
+      /* animation-timing-function: linear; */
+      /* animation-timing-function: ease-in; */
+      /* animation-timing-function: ease-out; */
+      /* animation-timing-function: ease-in-out; */
+
+      /* animation-timing-function:cubic-bezier(0.6, 0.04, 0.98, 0.335); */
+
+    }
+
+    @keyframes background-color-change {
+      0% {background-color: blue; color: yellow;}
+      25% {background-color: yellow; color: blue}
+      50% {background-color: red; color: green}
+      75% {background-color: green; color: red}
+      100% {background-color: purple; color: white;}
+    }
+
+    div#background-color-change {
+      width: 20vh;
+      height: 20vh;
+      margin: 5vh;
+      background-color: blue;
+      animation-name: background-color-change;
+      animation-delay: 3s;
+      animation-duration: 8s;
+      /* animation-iteration-count: 3; */
+      animation-iteration-count: infinite;
+      /* animation-direction: normal; */
+      /* animation-direction: reverse; */
+      /* animation-direction: alternate; */
+      /* animation-direction: alternate-reverse; */
+      /* animation-timing-function: ease; */
+      /* animation-timing-function: linear; */
+      /* animation-timing-function: ease-in; */
+      /* animation-timing-function: ease-out; */
+      /* animation-timing-function: ease-in-out; */
+
+      /* animation-timing-function:cubic-bezier(0.6, 0.04, 0.98, 0.335); */
+
+    }
+  </style>
 </head>
 <body>
+
+    <p id="animate">Content:  </p>
+
+    <div id="disappearing"></div>
+
+    <div id="appearing"></div>
+
+    <div id="background-color-change">Animated Font</div>
 
 </body>
 </html>
