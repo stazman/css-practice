@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox practice cross axis</title>
+<style>
+  .container-with-align-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    text-align: center;
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+    /* align-items: first baseline; */
+    /* align-items: last baseline; */
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: self-start; */
+    /* align-items: self-end; */
+  }
+
+  .container-with-align-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 120vh;
+    /* Default is align-content: stretch; */
+    /* align-content: center; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+  }
+
+  .float {
+    float: left;
+  }
+
+  .item-row-wrap {
+    flex-grow: 1;
+    background-color: blue;
+    color: white;
+    width: 25vh;
+    min-height: 25vh;
+    box-sizing: content-box;
+    font-size: 1.5em;
+    margin: .5em;
+  }
+
+</style>
+</head>
+<body>
+  <div class="container-with-align-items">
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float" style="width: 40vh;">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float" style="height: 40vh">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+  </div>
+
+  <br><br><hr><br><br>
+
+  <div class="container-with-align-content">
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+    <div class="item-row-wrap float">
+      <p>1</p>
+    </div>
+  </div>
+</body>
+</html>
