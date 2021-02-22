@@ -131,28 +131,28 @@
 </head>
 <body>
   <div class="container-row-wrap">
-    <div class="item-row-wrap">
+    <div class="item-row-wrap" style="order: 5;">
       <p>1</p>
     </div>
-    <div class="item-row-wrap">
+    <div class="item-row-wrap" style="order: 4;">
       <p>2</p>
     </div>
-    <div class="item-row-wrap">
+    <div class="item-row-wrap" style="order: 1;">
       <p>3</p>
     </div>
-    <div class="item-row-wrap">
+    <div class="item-row-wrap" style="order: 6">
       <p>4</p>
     </div>
-    <div class="item-row-wrap">
+    <div class="item-row-wrap"  style="order: 8;">
       <p>5</p>
     </div>
-    <div class="item-row-wrap">
+    <div class="item-row-wrap" style="order: 7;">
       <p>6</p>
     </div>
-    <div class="item-row-wrap">
+    <div class="item-row-wrap" style="order: 2;">
       <p>7</p>
     </div>
-    <div class="item-row-wrap">
+    <div class="item-row-wrap" style="order: 3;">
       <p>8</p>
     </div>
   </div>
@@ -163,7 +163,7 @@
     <div class="item-row-wrap-justified">
       <p>1</p>
     </div>
-    <div class="item-row-wrap-justified">
+    <div class="item-row-wrap-justified" style="flex-grow: 2;">
       <p>2</p>
     </div>
     <div class="item-row-wrap-justified" style="width: 40vh;">
@@ -175,24 +175,26 @@
     <div class="item-row-wrap-justified">
       <p>5</p>
     </div>
-    <div class="item-row-wrap-justified">
+    <div class="item-row-wrap-justified" style="flex-grow: 1;">
       <p>6</p>
     </div>
-    <div class="item-row-wrap-justified">
+    <div class="item-row-wrap-justified" style="flex-grow: 2;">
       <p>7</p>
     </div>
-    <div class="item-row-wrap-justified">
+    <div class="item-row-wrap-justified" style="flex-grow: 3;">
       <p>8</p>
     </div>
   </div>
 
   <br><br><hr><br><br>
 
+  <!-- flex-grow is not relevant for columns -->
+
   <div class="container-column-wrap">
     <div class="item-column-wrap">
       <p>1</p>
     </div>
-    <div class="item-column-wrap" style="flex-grow: 2;">
+    <div class="item-column-wrap">
       <p>2</p>
     </div>
     <div class="item-column-wrap">
@@ -236,7 +238,7 @@
     <div class="item-row-wrap float" style="height: 40vh">
       <p>6</p>
     </div>
-    <div class="item-row-wrap float">
+    <div class="item-row-wrap float" style="flex-grow: 2;">
       <p>7</p>
     </div>
   </div>
