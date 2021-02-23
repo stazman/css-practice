@@ -81,9 +81,7 @@
   .container-with-align-items {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    /* flex-wrap: wrap-reverse; */
+    /* align-items: center; */
     text-align: center;
     /* align-items: stretch; */
     /* align-items: flex-start; */
@@ -111,11 +109,11 @@
     /* align-content: space-between; */
     /* align-content: space-around; */
   }
-
+/*
   .float {
     float: left;
   }
-
+ */
   .item-row-wrap-flex-order-example {
     flex-grow: 1;
     background-color: blue;
@@ -243,7 +241,7 @@
     <div class="item-row-wrap-flex-shrink-example">
       <p>6</p>
     </div>
-    <div class="item-row-wrap-flex-shrink-example" style="flex-shrink: 4;">
+    <div class="item-row-wrap-flex-shrink-example">
       <p>7</p>
     </div>
     <div class="item-row-wrap-flex-shrink-example">
@@ -285,25 +283,25 @@
   <br><br><hr><br><br>
 
   <div class="container-with-align-items">
-    <div class="item-row-wrap float">
+    <div class="item-row-wrap">
       <p>1</p>
     </div>
-    <div class="item-row-wrap float">
+    <div class="item-row-wrap" style="align-self: center;">
       <p>2</p>
     </div>
-    <div class="item-row-wrap float" style="width: 40vh;">
+    <div class="item-row-wrap" style="width: 40vh;">
       <p>3</p>
     </div>
-    <div class="item-row-wrap float">
+    <div class="item-row-wrap">
       <p>4</p>
     </div>
-    <div class="item-row-wrap float">
+    <div class="item-row-wrap">
       <p>5</p>
     </div>
-    <div class="item-row-wrap float" style="height: 40vh">
+    <div class="item-row-wrap" style="height: 40vh">
       <p>6</p>
     </div>
-    <div class="item-row-wrap float" style="flex-grow: 2;">
+    <div class="item-row-wrap" style="flex-grow: 2;">
       <p>7</p>
     </div>
   </div>
